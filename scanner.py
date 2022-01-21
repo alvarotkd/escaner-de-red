@@ -1,6 +1,8 @@
 from pydoc import cli
 from tabnanny import verbose
 from scapy.all import *
+
+
 target_ip = '192.168.1.1/24'
 
 arp =ARP(pdst = target_ip)
