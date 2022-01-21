@@ -1,13 +1,10 @@
-from pydoc import cli
-from tabnanny import verbose
 from scapy.all import *
 
+objetivo = '192.168.1.1/24'
 
-target_ip = '192.168.1.1/24'
+arp =scapy.ARP(pdst=objetivo)
 
-arp =ARP(pdst = target_ip)
-
-ether =Ether(dst = "ff:ff:ff:ff:ff:ff" )
+ether =scapy.Ether(dst="ff:ff:ff:ff:ff:ff" )
 
 paquete = ether/arp
 
