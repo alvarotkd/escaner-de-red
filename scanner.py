@@ -6,7 +6,7 @@ import bottele
 
 
     
-target_ip = '192.168.12.1/24'
+target_ip = '192.168.1.1/24'
 
 arp = scapy.ARP(pdst = target_ip)
 
